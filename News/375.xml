@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<doc>
+  <source><![CDATA[http://www.oka.fm/new/read/Obyavleniya1/Ne-tushite-svet-Eto-sdelayut-za-vas/]]></source>
+  <category verify="true" type="str" auto="true"><![CDATA[Объявления]]></category>
+  <title verify="true" type="str" auto="true"><![CDATA[Не тушите свет! Это сделают за вас]]></title>
+  <keywords verify="true" type="list" auto="true">
+    <item type="str"><![CDATA[электричество]]></item>
+    <item type="str"><![CDATA[ремонтные работы]]></item>
+    <item type="str"><![CDATA[свет]]></item>
+  </keywords>
+  <text verify="true" type="str" auto="true"><![CDATA[О плановых отключениях коммунальных благ в предпраздничный день.
+Если сегодня утром вы нажали на кнопку выключателя, а свет не зажегся – значит, вы живете в Серпухове, в районе улицы Оборонной. 
+8 мая с 9 до 16 часов в связи с проведением плановых ремонтных работ холодильники будут течь по следующим адресам: на улице Оборонной – в домах №№21/4, 23, 25, 27, 29, 34, на улице Возрождения – в доме №1, во 2-м переулке Возрождения – дома №№2, 1/59, 7, 9, 11, на улице Володарского – в доме №57.  Также электричества не будет в близлежащей автомастерской и в гаражах.]]></text>
+</doc>

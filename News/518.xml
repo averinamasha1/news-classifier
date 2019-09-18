@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<doc>
+  <source><![CDATA[http://www.oka.fm/new/read/Obyavleniya1/Gde-ne-budet-sveta-30-aprelya/]]></source>
+  <category verify="true" type="str" auto="true"><![CDATA[Объявления]]></category>
+  <title verify="true" type="str" auto="true"><![CDATA[Где не будет света 30 апреля?]]></title>
+  <keywords verify="true" type="list" auto="true">
+    <item type="str"><![CDATA[электричество]]></item>
+    <item type="str"><![CDATA[отключения]]></item>
+  </keywords>
+  <text verify="true" type="str" auto="true"><![CDATA[Из-за плановых ремонтных работ сегодня, 30 апреля, до 16.00 будет отключено электричество в деревнях Воскресёнки, Гавшино, Новинки-Бегичево, Петровское, Погари и Тверитино. В Серпухове на этот же период будут обесточены дома по следующим адресам: ул. Лермонтова, ул. Центральная д. 173, 173-а, 171/75, ул. Джона Рида д. 2, 4, 4А-а 2, а также котельная №19.
+ ]]></text>
+</doc>

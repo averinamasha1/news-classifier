@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<doc>
+  <source><![CDATA[http://www.oka.fm/new/read/social/Gde-segodnya-otklyuchat-svet/]]></source>
+  <category verify="true" type="str" auto="true"><![CDATA[Общество]]></category>
+  <title verify="true" type="str" auto="true"><![CDATA[Где сегодня отключат свет?]]></title>
+  <keywords verify="true" type="list" auto="true">
+    <item type="str"><![CDATA[ремонтные работы]]></item>
+    <item type="str"><![CDATA[отключение электроэнергии]]></item>
+    <item type="str"><![CDATA[свет]]></item>
+  </keywords>
+  <text verify="true" type="str" auto="true"><![CDATA[Без света останутся восемь деревень и сел.
+Из-за ремонтных работ на сетях сегодня, 24 апреля, до 17.00 будет отключено электричество по следующим адресам: Липицы, Банино, Михайловка, Лукьяново, Высокие Дворики, Щеболово, Волково, п.Кирпичного, а также Серпухов, ул. Захаркина, д.38. До 16.00 света не будет на Фестивальной, 1 и Войкова, 2.]]></text>
+</doc>

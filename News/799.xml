@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<doc>
+  <source><![CDATA[http://www.oka.fm/new/read/social/V-Serpuhove-vveli-karantin/]]></source>
+  <category verify="true" type="str" auto="true"><![CDATA[Общество]]></category>
+  <title verify="true" type="str" auto="true"><![CDATA[В Серпухове ввели карантин]]></title>
+  <keywords verify="true" type="list" auto="true">
+    <item type="str"><![CDATA[серпухов]]></item>
+    <item type="str"><![CDATA[карантин]]></item>
+    <item type="str"><![CDATA[бешенство]]></item>
+    <item type="str"><![CDATA[улица сольца]]></item>
+  </keywords>
+  <text verify="true" type="str" auto="true"><![CDATA[Но действовать все запреты будут лишь на одной улице.
+Согласно документу, на территории городского округа Серпухов установлены ограничительные мероприятия (карантин) по бешенству животных. Веден запрет на проведение выставок собак и кошек, выводки и натаски собак, торговлю домашними животными, вывоз собак, кошек и диких животных за пределы карантинированной территории - в границах неблагополучной по бешенству животных улицы Сольца, где в начале апреля был зафиксирован случай бешенства со смертью собаки.]]></text>
+</doc>
