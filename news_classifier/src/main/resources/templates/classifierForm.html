@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ru" xmlns:th="http://www.thymeleaf.org">
+    <head>
+        <meta charset="UTF-8" />
+        <title>Классификатор новостей</title>
+        <link rel="stylesheet" type="text/css" th:href="@{/css/style.css}"/>
+    </head>
+    <body>
+        <header>
+            <h2><a href="/">Добро пожаловать!</a></h2>
+            <ul>
+                <li>
+                    <a href="/classifier">Узнать категорию новости</a>
+                </li>
+            </ul>
+        </header>
+        <form action="#" th:action="@{/classifier}" th:object="${classifierForm}" method="post">
+            <div>
+                <textarea class="text-area" th:field="*{text}" placeholder="Введите текст, чтобы узнать его категорию"></textarea>
+            </div>
+            <div>
+                <input type="submit" value="Узнать категорию"/>
+            </div>
+        </form>
+    </body>
+</html>
