@@ -6,9 +6,7 @@ import ru.mai.news_classifier.services.Category;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
-import org.springframework.web.bind.annotation.ModelAttribute;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.*;
 
 @Controller
 public class ClassifierController {
@@ -26,8 +24,17 @@ public class ClassifierController {
     }
     
     @RequestMapping(value = "/classifier", method = RequestMethod.POST)
-    public String classifySubmit(@ModelAttribute ClassifierForm classifierForm, Model model) throws Exception {
-        model.addAttribute("category", Category.getCategoryName(classifier.getCategory(classifierForm.getText())));
-        return "classifierCategoryForm";
+    public String classifySubmit(@ModelAttribute ClassifierForm classifierForm, Model model) {
+        if (classifierForm.getText().trim().isEmpty()) {
+            return "userTextErrorForm";
+        } else {
+            try {
+                model.addAttribute("category", Category.getCategoryName(classifier.getCategory(classifierForm.getText())));
+                return "classifierCategoryForm";
+            } catch (Exception ex) {
+                System.out.println("Произошла ошибка при классификации текста");
+                return "serviceErrorForm";
+            }
+        }
     }
 }

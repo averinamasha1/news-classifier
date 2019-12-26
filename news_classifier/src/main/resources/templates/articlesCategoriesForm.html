@@ -16,6 +16,17 @@
                     <a href="/articles">Просмотреть статьи</a>
                 </li>
             </ul>
-	    </header>
+        </header>
+        <div>
+            <h1>Статьи</h1>
+            <h3 th:text="'Объем коллекции: ' + ${articlesCount}"></h3>
+            <div>
+                <ul>
+                    <li th:each="category : ${categories}">
+                        <a th:href="@{'/articles/' + ${category.key}}" th:text="${category.value}"></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
     </body>
 </html>

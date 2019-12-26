@@ -16,6 +16,18 @@
                     <a href="/articles">Просмотреть статьи</a>
                 </li>
             </ul>
-	    </header>
+        </header>
+        <div>
+            <h1>Статьи</h1>
+            <h3 th:text="'Категория: ' + ${categoryValue}"></h3>
+            <h5 th:text="'Объем коллекции: ' + ${articles.size()}"></h5>
+            <div>
+                <ul>
+                    <li th:each="article : ${articles}">
+                        <a th:attr="download=${article}" th:href="@{|/articles/${categoryKey}/download/${article}|}" th:text="${article}"></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
     </body>
 </html>

@@ -12,8 +12,13 @@
                 <li>
                     <a href="/classifier">Узнать категорию новости</a>
                 </li>
+                <li>
+                    <a href="/articles">Просмотреть статьи</a>
+                </li>
             </ul>
         </header>
-        <p th:text="'Категория новости: ' + ${category}"></p>
+        <div>
+            <p th:text="'Категория новости: ' + ${category}"></p>
+        </div>
     </body>
 </html>

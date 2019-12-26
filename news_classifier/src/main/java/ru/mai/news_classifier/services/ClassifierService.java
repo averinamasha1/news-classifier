@@ -12,15 +12,16 @@ import weka.core.DenseInstance;
 import weka.core.Instances;
 import weka.core.SerializationHelper;
 
+import org.springframework.stereotype.Service;
+
+@Service
 public class ClassifierService {
     private Classifier classifier;
     private HashMap<String, Integer> dictionaryWords;
-    private HashMap<String, Integer> unnecessaryWords;
 
     public ClassifierService() throws Exception {
         classifier = (Classifier) SerializationHelper.read(new FileInputStream("data/oka_fm_data.model"));
         fillWords();
-        fillUnnecessaryWords();
     }
 
     public Category getCategory(String text) throws Exception {
@@ -34,18 +35,6 @@ public class ClassifierService {
         String line = reader.readLine();
         while (line != null) {
             dictionaryWords.put(line, wordCounter);
-            ++wordCounter;
-            line = reader.readLine();
-        }
-    }
-
-    private void fillUnnecessaryWords() throws Exception {
-        unnecessaryWords = new HashMap<>();
-        BufferedReader reader = new BufferedReader(new InputStreamReader(new FileInputStream("data/unnecessary_words.txt"), StandardCharsets.UTF_8));
-        int wordCounter = 0;
-        String line = reader.readLine();
-        while (line != null) {
-            unnecessaryWords.put(line, wordCounter);
             ++wordCounter;
             line = reader.readLine();
         }
@@ -72,7 +61,7 @@ public class ClassifierService {
         ArrayList<String> words = new ArrayList<>();
         for (String uncheckedWord : uncheckedWords) {
             String checkedWord = uncheckedWord.toLowerCase().replaceAll("[.,/#!?$%^&*;:{}=_`~()]", "");
-            if (!checkedWord.isEmpty() && !unnecessaryWords.containsKey(checkedWord)) {
+            if (!checkedWord.isEmpty()) {
                 words.add(checkedWord);
             }
         }
